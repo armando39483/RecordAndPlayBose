@@ -1,2 +1,2 @@
 # RecordAndPlayBose
-App will record and play sound on phone or on bluetooth headphones
+App can record sound and playback the recording on device or on bluetooth headphones
