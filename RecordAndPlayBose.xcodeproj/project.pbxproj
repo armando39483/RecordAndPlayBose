@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		599472202231AA72005C3701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994721F2231AA72005C3701 /* AppDelegate.swift */; };
+		599472222231AA72005C3701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599472212231AA72005C3701 /* ViewController.swift */; };
+		599472282231AA72005C3701 /* RecordAndPlayBose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 599472262231AA72005C3701 /* RecordAndPlayBose.xcdatamodeld */; };
+		5994722A2231AA77005C3701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599472292231AA77005C3701 /* Assets.xcassets */; };
+		5994722D2231AA77005C3701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5994722B2231AA77005C3701 /* LaunchScreen.storyboard */; };
+		599472382231AA77005C3701 /* RecordAndPlayBoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599472372231AA77005C3701 /* RecordAndPlayBoseTests.swift */; };
+		599472432231AA77005C3701 /* RecordAndPlayBoseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599472422231AA77005C3701 /* RecordAndPlayBoseUITests.swift */; };
+		5994725122320DA6005C3701 /* FeelinGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5994725022320DA6005C3701 /* FeelinGood.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		599472342231AA77005C3701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599472142231AA72005C3701 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5994721B2231AA72005C3701;
+			remoteInfo = RecordAndPlayBose;
+		};
+		5994723F2231AA77005C3701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599472142231AA72005C3701 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5994721B2231AA72005C3701;
+			remoteInfo = RecordAndPlayBose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5994721C2231AA72005C3701 /* RecordAndPlayBose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordAndPlayBose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5994721F2231AA72005C3701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		599472212231AA72005C3701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		599472272231AA72005C3701 /* RecordAndPlayBose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecordAndPlayBose.xcdatamodel; sourceTree = "<group>"; };
+		599472292231AA77005C3701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5994722C2231AA77005C3701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5994722E2231AA77005C3701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599472332231AA77005C3701 /* RecordAndPlayBoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordAndPlayBoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		599472372231AA77005C3701 /* RecordAndPlayBoseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAndPlayBoseTests.swift; sourceTree = "<group>"; };
+		599472392231AA77005C3701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5994723E2231AA77005C3701 /* RecordAndPlayBoseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordAndPlayBoseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		599472422231AA77005C3701 /* RecordAndPlayBoseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAndPlayBoseUITests.swift; sourceTree = "<group>"; };
+		599472442231AA77005C3701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5994725022320DA6005C3701 /* FeelinGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FeelinGood.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		599472192231AA72005C3701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599472302231AA77005C3701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5994723B2231AA77005C3701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		599472132231AA72005C3701 = {
+			isa = PBXGroup;
+			children = (
+				5994721E2231AA72005C3701 /* RecordAndPlayBose */,
+				599472362231AA77005C3701 /* RecordAndPlayBoseTests */,
+				599472412231AA77005C3701 /* RecordAndPlayBoseUITests */,
+				5994721D2231AA72005C3701 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5994721D2231AA72005C3701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5994721C2231AA72005C3701 /* RecordAndPlayBose.app */,
+				599472332231AA77005C3701 /* RecordAndPlayBoseTests.xctest */,
+				5994723E2231AA77005C3701 /* RecordAndPlayBoseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5994721E2231AA72005C3701 /* RecordAndPlayBose */ = {
+			isa = PBXGroup;
+			children = (
+				5994725222320DB8005C3701 /* AudioFile */,
+				5994721F2231AA72005C3701 /* AppDelegate.swift */,
+				599472212231AA72005C3701 /* ViewController.swift */,
+				599472292231AA77005C3701 /* Assets.xcassets */,
+				5994722B2231AA77005C3701 /* LaunchScreen.storyboard */,
+				5994722E2231AA77005C3701 /* Info.plist */,
+				599472262231AA72005C3701 /* RecordAndPlayBose.xcdatamodeld */,
+			);
+			path = RecordAndPlayBose;
+			sourceTree = "<group>";
+		};
+		599472362231AA77005C3701 /* RecordAndPlayBoseTests */ = {
+			isa = PBXGroup;
+			children = (
+				599472372231AA77005C3701 /* RecordAndPlayBoseTests.swift */,
+				599472392231AA77005C3701 /* Info.plist */,
+			);
+			path = RecordAndPlayBoseTests;
+			sourceTree = "<group>";
+		};
+		599472412231AA77005C3701 /* RecordAndPlayBoseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				599472422231AA77005C3701 /* RecordAndPlayBoseUITests.swift */,
+				599472442231AA77005C3701 /* Info.plist */,
+			);
+			path = RecordAndPlayBoseUITests;
+			sourceTree = "<group>";
+		};
+		5994725222320DB8005C3701 /* AudioFile */ = {
+			isa = PBXGroup;
+			children = (
+				5994725022320DA6005C3701 /* FeelinGood.mp3 */,
+			);
+			path = AudioFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5994721B2231AA72005C3701 /* RecordAndPlayBose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599472472231AA77005C3701 /* Build configuration list for PBXNativeTarget "RecordAndPlayBose" */;
+			buildPhases = (
+				599472182231AA72005C3701 /* Sources */,
+				599472192231AA72005C3701 /* Frameworks */,
+				5994721A2231AA72005C3701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordAndPlayBose;
+			productName = RecordAndPlayBose;
+			productReference = 5994721C2231AA72005C3701 /* RecordAndPlayBose.app */;
+			productType = "com.apple.product-type.application";
+		};
+		599472322231AA77005C3701 /* RecordAndPlayBoseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5994724A2231AA77005C3701 /* Build configuration list for PBXNativeTarget "RecordAndPlayBoseTests" */;
+			buildPhases = (
+				5994722F2231AA77005C3701 /* Sources */,
+				599472302231AA77005C3701 /* Frameworks */,
+				599472312231AA77005C3701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599472352231AA77005C3701 /* PBXTargetDependency */,
+			);
+			name = RecordAndPlayBoseTests;
+			productName = RecordAndPlayBoseTests;
+			productReference = 599472332231AA77005C3701 /* RecordAndPlayBoseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5994723D2231AA77005C3701 /* RecordAndPlayBoseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5994724D2231AA77005C3701 /* Build configuration list for PBXNativeTarget "RecordAndPlayBoseUITests" */;
+			buildPhases = (
+				5994723A2231AA77005C3701 /* Sources */,
+				5994723B2231AA77005C3701 /* Frameworks */,
+				5994723C2231AA77005C3701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599472402231AA77005C3701 /* PBXTargetDependency */,
+			);
+			name = RecordAndPlayBoseUITests;
+			productName = RecordAndPlayBoseUITests;
+			productReference = 5994723E2231AA77005C3701 /* RecordAndPlayBoseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		599472142231AA72005C3701 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Armando Gonzalez";
+				TargetAttributes = {
+					5994721B2231AA72005C3701 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					599472322231AA77005C3701 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5994721B2231AA72005C3701;
+					};
+					5994723D2231AA77005C3701 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5994721B2231AA72005C3701;
+					};
+				};
+			};
+			buildConfigurationList = 599472172231AA72005C3701 /* Build configuration list for PBXProject "RecordAndPlayBose" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 599472132231AA72005C3701;
+			productRefGroup = 5994721D2231AA72005C3701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5994721B2231AA72005C3701 /* RecordAndPlayBose */,
+				599472322231AA77005C3701 /* RecordAndPlayBoseTests */,
+				5994723D2231AA77005C3701 /* RecordAndPlayBoseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5994721A2231AA72005C3701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5994722D2231AA77005C3701 /* LaunchScreen.storyboard in Resources */,
+				5994722A2231AA77005C3701 /* Assets.xcassets in Resources */,
+				5994725122320DA6005C3701 /* FeelinGood.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599472312231AA77005C3701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5994723C2231AA77005C3701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		599472182231AA72005C3701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599472282231AA72005C3701 /* RecordAndPlayBose.xcdatamodeld in Sources */,
+				599472222231AA72005C3701 /* ViewController.swift in Sources */,
+				599472202231AA72005C3701 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5994722F2231AA77005C3701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599472382231AA77005C3701 /* RecordAndPlayBoseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5994723A2231AA77005C3701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599472432231AA77005C3701 /* RecordAndPlayBoseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		599472352231AA77005C3701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5994721B2231AA72005C3701 /* RecordAndPlayBose */;
+			targetProxy = 599472342231AA77005C3701 /* PBXContainerItemProxy */;
+		};
+		599472402231AA77005C3701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5994721B2231AA72005C3701 /* RecordAndPlayBose */;
+			targetProxy = 5994723F2231AA77005C3701 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5994722B2231AA77005C3701 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5994722C2231AA77005C3701 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		599472452231AA77005C3701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		599472462231AA77005C3701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		599472482231AA77005C3701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BS5AL5SZZ;
+				INFOPLIST_FILE = RecordAndPlayBose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armando.RecordAndPlayBose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		599472492231AA77005C3701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BS5AL5SZZ;
+				INFOPLIST_FILE = RecordAndPlayBose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armando.RecordAndPlayBose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5994724B2231AA77005C3701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BS5AL5SZZ;
+				INFOPLIST_FILE = RecordAndPlayBoseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armando.RecordAndPlayBoseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecordAndPlayBose.app/RecordAndPlayBose";
+			};
+			name = Debug;
+		};
+		5994724C2231AA77005C3701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BS5AL5SZZ;
+				INFOPLIST_FILE = RecordAndPlayBoseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armando.RecordAndPlayBoseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecordAndPlayBose.app/RecordAndPlayBose";
+			};
+			name = Release;
+		};
+		5994724E2231AA77005C3701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BS5AL5SZZ;
+				INFOPLIST_FILE = RecordAndPlayBoseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armando.RecordAndPlayBoseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecordAndPlayBose;
+			};
+			name = Debug;
+		};
+		5994724F2231AA77005C3701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BS5AL5SZZ;
+				INFOPLIST_FILE = RecordAndPlayBoseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armando.RecordAndPlayBoseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecordAndPlayBose;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		599472172231AA72005C3701 /* Build configuration list for PBXProject "RecordAndPlayBose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599472452231AA77005C3701 /* Debug */,
+				599472462231AA77005C3701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599472472231AA77005C3701 /* Build configuration list for PBXNativeTarget "RecordAndPlayBose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599472482231AA77005C3701 /* Debug */,
+				599472492231AA77005C3701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5994724A2231AA77005C3701 /* Build configuration list for PBXNativeTarget "RecordAndPlayBoseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5994724B2231AA77005C3701 /* Debug */,
+				5994724C2231AA77005C3701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5994724D2231AA77005C3701 /* Build configuration list for PBXNativeTarget "RecordAndPlayBoseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5994724E2231AA77005C3701 /* Debug */,
+				5994724F2231AA77005C3701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		599472262231AA72005C3701 /* RecordAndPlayBose.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				599472272231AA72005C3701 /* RecordAndPlayBose.xcdatamodel */,
+			);
+			currentVersion = 599472272231AA72005C3701 /* RecordAndPlayBose.xcdatamodel */;
+			path = RecordAndPlayBose.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 599472142231AA72005C3701 /* Project object */;
+}
