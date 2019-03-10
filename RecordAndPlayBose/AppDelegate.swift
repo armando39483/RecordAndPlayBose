@@ -8,20 +8,40 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var audioSession: AVAudioSession!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupAudioSession()
         window = UIWindow(frame: UIScreen.main.bounds)
         let mainVC = ViewController()
         window?.rootViewController = mainVC
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    private func setupAudioSession() {
+        audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playAndRecord, mode: .default, options: .allowBluetooth)
+            try audioSession.setActive(true)
+            audioSession.requestRecordPermission() {
+                (allowed) in
+                DispatchQueue.main.async {
+                    if !allowed {
+                        print("Permission denied: cannot record")
+                    }
+                }
+            }
+        } catch {
+            print("Error occured while setting up audio session")
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -46,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+        audioSession = nil
     }
 
     // MARK: - Core Data stack
