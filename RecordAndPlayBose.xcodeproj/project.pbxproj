@@ -14,7 +14,6 @@
 		5994722D2231AA77005C3701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5994722B2231AA77005C3701 /* LaunchScreen.storyboard */; };
 		599472382231AA77005C3701 /* RecordAndPlayBoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599472372231AA77005C3701 /* RecordAndPlayBoseTests.swift */; };
 		599472432231AA77005C3701 /* RecordAndPlayBoseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599472422231AA77005C3701 /* RecordAndPlayBoseUITests.swift */; };
-		5994725122320DA6005C3701 /* FeelinGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5994725022320DA6005C3701 /* FeelinGood.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		5994723E2231AA77005C3701 /* RecordAndPlayBoseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordAndPlayBoseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		599472422231AA77005C3701 /* RecordAndPlayBoseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAndPlayBoseUITests.swift; sourceTree = "<group>"; };
 		599472442231AA77005C3701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5994725022320DA6005C3701 /* FeelinGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FeelinGood.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 		5994721E2231AA72005C3701 /* RecordAndPlayBose */ = {
 			isa = PBXGroup;
 			children = (
-				5994725222320DB8005C3701 /* AudioFile */,
 				5994721F2231AA72005C3701 /* AppDelegate.swift */,
 				599472212231AA72005C3701 /* ViewController.swift */,
 				599472292231AA77005C3701 /* Assets.xcassets */,
@@ -126,14 +123,6 @@
 				599472442231AA77005C3701 /* Info.plist */,
 			);
 			path = RecordAndPlayBoseUITests;
-			sourceTree = "<group>";
-		};
-		5994725222320DB8005C3701 /* AudioFile */ = {
-			isa = PBXGroup;
-			children = (
-				5994725022320DA6005C3701 /* FeelinGood.mp3 */,
-			);
-			path = AudioFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +236,6 @@
 			files = (
 				5994722D2231AA77005C3701 /* LaunchScreen.storyboard in Resources */,
 				5994722A2231AA77005C3701 /* Assets.xcassets in Resources */,
-				5994725122320DA6005C3701 /* FeelinGood.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

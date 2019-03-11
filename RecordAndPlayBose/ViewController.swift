@@ -51,28 +51,33 @@ class ViewController: UIViewController {
         stackView.axis = .horizontal
         stackView.spacing = 25
         stackView.distribution = .fill
-        addCenterConstraints(for: stackView)
+        let centerX = NSLayoutConstraint(item: stackView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        let centerY = NSLayoutConstraint(item: stackView, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
+        view.addConstraints([centerX,centerY])
     }
     
     private func addCenterConstraints(for sv: UIStackView) {
-        let centerX = NSLayoutConstraint(item: sv, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
-        let centerY = NSLayoutConstraint(item: sv, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
-        view.addConstraints([centerX,centerY])
+        
     }
 
     private func setupButtons() {
-        playButton = UIButton.init(type: .roundedRect)
-        recordButton = UIButton.init(type: .roundedRect)
+        playButton = UIButton()
+        recordButton = UIButton()
         view.addSubview(playButton)
         view.addSubview(recordButton)
+        playButton.isEnabled = false
         setHeightAndWidth(for: playButton)
         setHeightAndWidth(for: recordButton)
+        playButton.layer.cornerRadius = 12
+        recordButton.layer.cornerRadius = 12
+        playButton.clipsToBounds = true
+        recordButton.clipsToBounds = true
         playButton.setTitle("Play", for: .normal)
-        playButton.setTitle("Stop", for: .selected)
+        playButton.setTitle("Pause", for: .selected)
         recordButton.setTitle("Record", for: .normal)
-        recordButton.setTitle("Done", for: .selected)
-        playButton.setTitleColor(.black, for: [.normal,.selected])
-        recordButton.setTitleColor(.black, for: [.normal,.selected])
+        recordButton.setTitle("Stop Recording", for: .selected)
+        playButton.setTitleColor(.black, for: .normal)
+        recordButton.setTitleColor(.black, for: .normal)
         playButton.backgroundColor = .green
         recordButton.backgroundColor = .red
         playButton.translatesAutoresizingMaskIntoConstraints = false
@@ -106,7 +111,7 @@ class ViewController: UIViewController {
     
     private func setHeightAndWidth(for button: UIButton) {
         let height = NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 25)
-        let width = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 75)
+        let width = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 125)
         view.addConstraints([height,width])
     }
 }
@@ -136,7 +141,7 @@ extension ViewController: AVAudioRecorderDelegate {
     }
 }
 
-extension ViewController {
+extension ViewController: AVAudioPlayerDelegate {
     private func audioPlayer(play: Bool) {
         if play {
             do {
@@ -144,6 +149,7 @@ extension ViewController {
             } catch let error {
                 print("Error creating audio player - \(error)")
             }
+            audioPlayer.numberOfLoops = -1
             audioPlayer.play()
             print("Playing audio")
         } else {

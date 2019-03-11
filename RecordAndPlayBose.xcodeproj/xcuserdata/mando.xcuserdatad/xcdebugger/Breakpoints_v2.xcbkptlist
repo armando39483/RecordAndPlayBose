@@ -10,11 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RecordAndPlayBose/ViewController.swift"
-            timestampString = "573941062.039503"
+            timestampString = "573942919.266211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167">
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "getRecordingURL()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
