@@ -51,8 +51,8 @@ class ViewController: UIViewController {
         boseLogo = UIImageView(image: UIImage(named: "bose"))
         view.addSubview(boseLogo)
         boseLogo.translatesAutoresizingMaskIntoConstraints = false
-//        boseLogo.contentMode = .scaleAspectFit
-        let top = NSLayoutConstraint(item: boseLogo, attribute: .topMargin, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1, constant: 0)
+        boseLogo.contentMode = .scaleAspectFit
+        let top = NSLayoutConstraint(item: boseLogo, attribute: .topMargin, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1, constant: 8)
         let leading = NSLayoutConstraint(item: boseLogo, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading , multiplier: 1, constant: 0)
         let trailing = NSLayoutConstraint(item: boseLogo, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0)
         let height = NSLayoutConstraint(item: boseLogo, attribute: .height, relatedBy: .equal, toItem: view, attribute: .height, multiplier: 0.20, constant: 0)
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
         buttonsStackView.axis = .horizontal
         buttonsStackView.spacing = 25
-        buttonsStackView.distribution = .fill
+        buttonsStackView.distribution = .fillEqually
         let centerX = NSLayoutConstraint(item: buttonsStackView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
         let centerY = NSLayoutConstraint(item: buttonsStackView, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
         view.addConstraints([centerX,centerY])
